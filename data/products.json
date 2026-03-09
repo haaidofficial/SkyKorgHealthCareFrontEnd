@@ -1,0 +1,83 @@
+{
+  "categories": [
+    {
+      "slug": "category-1",
+      "name": "Category 1",
+      "description": "Sample components for industrial grade applications.",
+      "products": [
+        {
+          "slug": "product-a",
+          "sku": "CAT1-A",
+          "name": "Product A",
+          "shortDescription": "Durable and efficient.",
+          "description": "Product A is engineered for performance in harsh environments.",
+          "image": "/placeholder.png",
+          "specs": {
+            "Size": "100 mm",
+            "Weight": "1.2 kg",
+            "Material": "Aluminum"
+          }
+        },
+        {
+          "slug": "product-b",
+          "sku": "CAT1-B",
+          "name": "Product B",
+          "shortDescription": "Compact and powerful.",
+          "description": "Product B offers compact design with high torque output.",
+          "image": "/placeholder.png",
+          "specs": {
+            "Size": "80 mm",
+            "Weight": "0.9 kg",
+            "Material": "Stainless Steel"
+          }
+        },
+        {
+          "slug": "product-d",
+          "sku": "CAT1-D",
+          "name": "Product D",
+          "shortDescription": "Lightweight and robust.",
+          "description": "Product D combines minimal weight with high durability.",
+          "image": "/placeholder.png",
+          "specs": {
+            "Size": "75 mm",
+            "Weight": "0.7 kg",
+            "Material": "Aluminum"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "category-2",
+      "name": "Category 2",
+      "description": "Precision modules for specialized needs.",
+      "products": [
+        {
+          "slug": "product-c",
+          "sku": "CAT2-C",
+          "name": "Product C",
+          "shortDescription": "High precision assembly.",
+          "description": "Product C delivers precision alignment suitable for automation lines.",
+          "image": "/placeholder.png",
+          "specs": {
+            "Size": "120 mm",
+            "Weight": "1.5 kg",
+            "Material": "Carbon Fiber"
+          }
+        },
+        {
+          "slug": "product-e",
+          "sku": "CAT2-E",
+          "name": "Product E",
+          "shortDescription": "Heat resistant module.",
+          "description": "Product E operates under high temperature with stability.",
+          "image": "/placeholder.png",
+          "specs": {
+            "Size": "90 mm",
+            "Weight": "1.1 kg",
+            "Material": "Stainless Steel"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "siteName": "SkyKorg HealthCare",
+"nav": {
+    "home": "Home",
+    "providersolution": "Provider Solutions",
+    "payersolutions": "Payer Solutions",
+    "dmebilling": "DME Billing",
+    "priorauth": "Prior Auth",
+    "compliance": "Compliance",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Advanced Healthcare Revenue Cycle Management Solutions",
+    "heroSubtitle": "SkyKorg Healthcare empowers medical providers, DME suppliers, and healthcare organizations with expert medical billing, prior authorization, and revenue cycle management services.",
+    "cta": "Explore Our Healthcare Solutions",
+    "metaTitle": "SkyKorg Healthcare | Medical Billing & Revenue Cycle Management Experts",
+    "metaDescription": "SkyKorg Healthcare provides medical billing, RCM services, prior authorization, DME billing, compliance solutions, and virtual healthcare assistants to providers and payers."
+  },
+
+  "providersolutions": {
+    "title": "Provider Solutions",
+    "metaTitle": "Healthcare Provider Solutions | Medical Billing & RCM Services",
+    "metaDescription": "Comprehensive healthcare provider solutions including medical billing, coding, denial management, prior authorization, and virtual medical assistants.",
+    "categories": {
+
+      "specialties": {
+        "title": "Medical Billing for Healthcare Specialties",
+        "items": {
+          "dme": {
+            "title": "DME Billing Services",
+            "description": "SkyKorg Healthcare provides specialized billing services for Durable Medical Equipment providers, ensuring accurate coding, documentation compliance, and faster reimbursements."
+          },
+          "orthotics": {
+            "title": "Orthotics & Prosthetics Billing",
+            "description": "Complete revenue cycle management solutions for orthotics and prosthetics providers including eligibility verification, coding, and claims processing."
+          },
+          "urgentcare": {
+            "title": "Urgent Care Billing Services",
+            "description": "Efficient urgent care billing services designed to streamline patient intake, insurance verification, coding accuracy, and faster claim reimbursements."
+          },
+          "gastroenterology": {
+            "title": "Gastroenterology Billing Services",
+            "description": "Specialized billing and coding solutions for gastroenterology practices ensuring compliance and optimized reimbursement."
+          },
+          "cardiology": {
+            "title": "Cardiology Billing Services",
+            "description": "Comprehensive cardiology billing and coding services to reduce denials and maximize reimbursements for cardiology practices."
+          },
+          "infusion": {
+            "title": "Infusion Billing Services",
+            "description": "Expert infusion therapy billing services covering drug coding, claims management, and reimbursement optimization."
+          },
+          "fertility": {
+            "title": "Fertility Clinic Billing Services",
+            "description": "Specialized fertility clinic billing services ensuring compliance with complex insurance requirements and maximizing reimbursements."
+          },
+          "radiology": {
+            "title": "Radiology Billing Services",
+            "description": "Radiology billing and coding solutions designed to improve claim accuracy and reduce reimbursement delays."
+          },
+          "snf": {
+            "title": "Skilled Nursing Facility Billing",
+            "description": "RCM solutions tailored for skilled nursing facilities including documentation management and claim processing."
+          },
+          "allspecialities": {
+            "title": "Medical Billing for All Specialties",
+            "description": "SkyKorg Healthcare provides customized revenue cycle management solutions for healthcare practices across all medical specialties."
+          }
+        }
+      },
+
+      "revenuecycle": {
+        "title": "Revenue Cycle Management Services",
+        "items": {
+          "priorauthorization": {
+            "title": "Prior Authorization Services",
+            "description": "Professional prior authorization support ensuring faster approvals and reduced treatment delays."
+          },
+          "medicalbilling": {
+            "title": "Medical Billing Services",
+            "description": "End-to-end medical billing services including claims submission, payment posting, and denial management."
+          },
+          "patientintake": {
+            "title": "Patient Intake Management",
+            "description": "Streamlined patient intake services improving registration accuracy and reducing administrative workload."
+          },
+          "eligibilityverification": {
+            "title": "Insurance Eligibility Verification",
+            "description": "Accurate insurance eligibility verification to prevent claim denials and billing errors."
+          },
+          "chargeentry": {
+            "title": "Charge Entry Services",
+            "description": "Precise charge entry services ensuring accurate billing data and faster claims processing."
+          },
+          "medicalcoding": {
+            "title": "Medical Coding Services",
+            "description": "Certified medical coders ensuring compliance with ICD-10, CPT, and HCPCS standards."
+          },
+          "claimsmanagement": {
+            "title": "Claims Management Services",
+            "description": "Complete claims management solutions to ensure faster claim submission and reimbursements."
+          },
+          "clinicaldocumentation": {
+            "title": "Clinical Documentation Improvement",
+            "description": "Improve documentation accuracy and coding compliance with clinical documentation services."
+          },
+          "accountsreceivable": {
+            "title": "Accounts Receivable Management",
+            "description": "Reduce outstanding balances and improve cash flow with AR management services."
+          },
+          "denialmanagement": {
+            "title": "Denial Management Services",
+            "description": "Identify root causes of denials and implement strategies to recover lost revenue."
+          }
+        }
+      },
+
+      "virtualassistants": {
+        "title": "Healthcare Virtual Assistants",
+        "items": {
+          "medicalassistants": {
+            "title": "Virtual Medical Assistants",
+            "description": "Trained virtual medical assistants supporting scheduling, documentation, and patient communication."
+          },
+          "officeassistants": {
+            "title": "Virtual Office Assistants",
+            "description": "Remote office assistants helping healthcare practices manage administrative tasks efficiently."
+          },
+          "scribes": {
+            "title": "Virtual Medical Scribes",
+            "description": "Professional virtual scribes assisting physicians with accurate medical documentation."
+          }
+        }
+      },
+
+      "otherservices": {
+        "title": "Additional Healthcare Services",
+        "items": {
+          "contactcenter": {
+            "title": "Healthcare Contact Center",
+            "description": "Dedicated healthcare contact center solutions improving patient communication and support."
+          },
+          "credentialing": {
+            "title": "Provider Credentialing Services",
+            "description": "Complete provider credentialing services ensuring compliance with payer requirements."
+          },
+          "dataentry": {
+            "title": "Medical Data Entry Services",
+            "description": "Accurate medical data entry services to support healthcare administrative operations."
+          },
+          "remotemonitoring": {
+            "title": "Remote Patient Monitoring",
+            "description": "Support services for remote patient monitoring programs improving patient outcomes."
+          },
+          "patientcollection": {
+            "title": "Patient Collection Services",
+            "description": "Professional patient collection services improving revenue recovery."
+          },
+          "triage": {
+            "title": "Telephone & Message Triage",
+            "description": "Efficient triage services ensuring timely communication with patients."
+          },
+          "transcription": {
+            "title": "Medical Transcription Services",
+            "description": "Accurate and secure medical transcription services for healthcare providers."
+          },
+          "bookkeeping": {
+            "title": "Healthcare Bookkeeping & Accounting",
+            "description": "Financial management services tailored for healthcare practices."
+          },
+          "outofnetwork": {
+            "title": "Out-of-Network Collections",
+            "description": "Specialized revenue recovery solutions for out-of-network claims."
+          }
+        }
+      }
+    }
+  },
+
+  "payersolutions": {
+    "title": "Healthcare Payer Solutions",
+    "metaTitle": "Healthcare Payer Services | Claims Processing & Adjudication",
+    "metaDescription": "SkyKorg Healthcare provides payer services including claim processing, adjudication, member enrollment, and provider credentialing.",
+    "items": [
+      "Claim Processing",
+      "Claim Adjudication",
+      "Member Enrollment",
+      "Data Analytics & Management",
+      "Documentation",
+      "Billing & Collections",
+      "Provider Credentialing",
+      "Utilization Management",
+      "Customer Support",
+      "Medicare Part D"
+    ]
+  },
+
+  "resources": {
+    "title": "Healthcare Industry Resources",
+    "metaTitle": "Healthcare Blogs, Case Studies & Industry Resources",
+    "metaDescription": "Explore healthcare blogs, case studies, whitepapers, testimonials, and videos from SkyKorg Healthcare experts.",
+    "items": [
+      "Blog",
+      "Testimonials",
+      "Videos",
+      "Newsroom",
+      "Bulletin",
+      "Case Studies",
+      "Whitepapers"
+    ]
+  },
+
+  "about": {
+    "title": "About SkyKorg Healthcare",
+    "metaTitle": "About SkyKorg Healthcare | Medical Billing Company",
+    "metaDescription": "SkyKorg Healthcare is a trusted medical billing and RCM outsourcing company helping healthcare providers increase revenue and efficiency."
+  },
+
+  "contact": {
+    "title": "Contact SkyKorg Healthcare",
+    "metaTitle": "Contact SkyKorg Healthcare | Medical Billing Consultation",
+    "metaDescription": "Contact SkyKorg Healthcare for medical billing, RCM services, prior authorization support, and healthcare outsourcing solutions."
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Submit",
+    "getQuoteTitle": "Get a Quote",
+    "quoteInfo": "You're requesting a quote for:",
+    "thanks": "Thanks! We received your request.",
+    "contactThanks": "Thanks! We received your message."
+  }
+}
