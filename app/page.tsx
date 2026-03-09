@@ -1,4 +1,4 @@
-import HeroCarousel from "../components/HeroCarousel";
+import HeroCarousel from '@/components/HeroCarousel';
 import USP from '@/components/USP';
 import Clients from '@/components/Clients';
 import HealthSpecialties from '@/components/HealthSpecialties';

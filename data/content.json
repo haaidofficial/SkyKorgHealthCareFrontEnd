@@ -213,7 +213,8 @@
   "contact": {
     "title": "Contact SkyKorg Healthcare",
     "metaTitle": "Contact SkyKorg Healthcare | Medical Billing Consultation",
-    "metaDescription": "Contact SkyKorg Healthcare for medical billing, RCM services, prior authorization support, and healthcare outsourcing solutions."
+    "metaDescription": "Contact SkyKorg Healthcare for medical billing, RCM services, prior authorization support, and healthcare outsourcing solutions.",
+    "body": ""
   },
   "forms": {
     "name": "Name",
