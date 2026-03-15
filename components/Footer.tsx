@@ -1,16 +1,18 @@
+
 export default function Footer() {
   return (
     <footer className="bg-[#000e24] border-t border-gray-800">
       <div className="container-custom py-16 grid md:grid-cols-4 gap-10 text-gray-400">
         <div>
           <h3 className="text-white font-bold mb-4">SkyKorg Healthcare</h3>
-          <p>SkyKorg HealthCare delivers reliable medical billing and Revenue Cycle Management services designed to improve financial performance and operational efficiency for healthcare providers and medical practices.</p>
+          <p>SkyKorg HealthCare provides reliable medical billing and Revenue Cycle Management (RCM) services to help healthcare providers streamline operations, improve reimbursements, and focus on quality patient care.</p>
         </div>
         <div>
           <h4 className="text-white font-semibold mb-4">Company</h4>
           <ul className="space-y-2">
             <li>About</li>
-            <li>Contact</li>
+            <li>Careers</li>
+            <li>News</li>
           </ul>
         </div>
         <div>
@@ -30,13 +32,9 @@ export default function Footer() {
           <p>info@skykorghealthcare.com</p>
         </div>
       </div>
-      <div className="border-t mt-12">
-      <div className="container-responsive py-6 text-sm text-gray-600">
-        © {new Date().getFullYear()} SkyKorg Healthcare. All rights reserved.
+      <div className="text-center py-6 text-gray-600 border-t border-gray-800">
+        © 2026 SkyKorg Healthcare. All rights reserved.
       </div>
-    </div>
-      
     </footer>
-    
   );
 }

@@ -1,237 +1,254 @@
 import Image from "next/image";
 import Link from "next/link";
-import EnquiryForm from "@/components/EnquiryForm";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
-export const metadata = {
-  title: "Claims Processing Services for Payers | SkyKorg Healthcare",
-  description:
-    "SkyKorg Healthcare provides fast and accurate payer-side claims processing services ensuring compliance, efficiency, and improved financial performance."
-};
-
-export default function ClaimsProcessingPage() {
+export default function ClinicalDocumentationServices() {
   return (
-    <main className="bg-gray-50">
+    <main>
 
       {/* HERO */}
-      <section className="relative py-24 text-white">
-
+      <section className="relative bg-black text-white">
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
-            alt="Claims Processing Services"
+            src="/images/hero/provider-banner.jpg"
+            alt="Clinical Documentation Services"
             fill
-            className="object-cover"
+            className="object-cover opacity-40"
           />
         </div>
 
-        <div className="absolute inset-0 bg-black/70"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6">
-
-          <h1 className="text-4xl md:text-5xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+        <div className="relative max-w-7xl mx-auto px-6 py-20">
+          <h1 className="text-4xl font-bold max-w-3xl">
+            Customized Clinical Documentation Services: Sun Knowledge Inc
           </h1>
 
-          <div className="w-16 h-1 bg-orange-500 mt-4"></div>
+          <div className="w-16 h-1 bg-yellow-500 mt-4"></div>
+        </div>
+      </section>
+
+
+      {/* CONTENT */}
+      <section className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-3 gap-12">
+
+        {/* LEFT CONTENT */}
+        <div className="lg:col-span-2 space-y-8 text-gray-700">
+
+          <p>
+            Missing medical documentation and coding issues are some of the most
+            prevalent contributors to claim rejections in healthcare organizations.
+            Improving clinical documentation ensures higher revenue accuracy and
+            better healthcare compliance.
+          </p>
+
+          <ul className="space-y-3">
+            <li className="flex gap-3">
+              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              Challenges adapting to different EMR platforms
+            </li>
+
+            <li className="flex gap-3">
+              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              Missing treatment information and incorrect documentation
+            </li>
+
+            <li className="flex gap-3">
+              <CheckCircleIcon className="w-5 text-yellow-500"/>
+              Finding experienced resources and technology expertise
+            </li>
+          </ul>
+
+
+          {/* SECTION */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4">
+              Ensure Accurate Clinical Documentation Services With Us
+            </h2>
+
+            <p>
+              Our Clinical Documentation Improvement (CDI) services are designed
+              to improve coding accuracy and enhance clinical data quality across
+              healthcare organizations.
+            </p>
+
+            <ul className="mt-6 space-y-3">
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                DRG validation and coding accuracy improvement
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Procedural and diagnosis coding optimization
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Documentation of patient safety indicators
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Hospital acquired conditions documentation
+              </li>
+            </ul>
+          </div>
+
+
+          {/* SERVICES */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">
+              Services Extended in Clinical Documentation
+            </h3>
+
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Simultaneous review of medical records
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Clarifications and corrections in coding queries
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Follow-ups on delayed physician queries
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Resolving DRG discrepancies
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Physician education on documentation practices
+              </li>
+            </ul>
+          </div>
+
+
+          {/* BENEFITS */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4">
+              Benefits of Our Clinical Documentation Integrity Services
+            </h2>
+
+            <p>
+              Our services help healthcare organizations reduce operational
+              expenses, streamline documentation workflows and improve
+              reimbursement accuracy.
+            </p>
+
+            <ul className="mt-6 space-y-3">
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Improved documentation workflows
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Faster reimbursement cycles
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Reduced claim denials
+              </li>
+
+              <li className="flex gap-3">
+                <CheckCircleIcon className="w-5 text-yellow-500"/>
+                Better regulatory compliance
+              </li>
+
+            </ul>
+          </div>
 
         </div>
 
-      </section>
 
-      {/* MAIN CONTENT */}
-      <section className="py-16">
+        {/* SIDEBAR */}
+        <aside className="space-y-6">
 
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+          <div className="bg-yellow-400 p-6 border-2 border-black text-center">
 
-          {/* LEFT CONTENT */}
-          <div className="lg:col-span-2 space-y-10 text-gray-700">
+            <h3 className="font-bold text-lg mb-4">
+              The SunKnowledge Advantage
+            </h3>
 
-            <p>
-              SkyKorg Healthcare offers a comprehensive approach to
-              payer-side claims processing. Our expertise combines
-              advanced technology and industry knowledge to improve
-              operational efficiency and financial performance for
-              healthcare payers.
-            </p>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Comprehensive Payer-Side Claims Processing Solutions
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>
-                  Claim Form Processing and Re-Pricing for efficient
-                  claims entry and verification.
-                </li>
-
-                <li>
-                  Eligibility and Coverage Verification to ensure
-                  accurate claims processing.
-                </li>
-
-                <li>
-                  Timely claim turnaround with industry-leading
-                  processing speed.
-                </li>
-
-                <li>
-                  Expertise across Medicare, Medicaid, and Commercial
-                  payer claims systems.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Addressing Common Challenges in Claims Processing
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>
-                  Meeting turnaround time requirements through optimized
-                  workflow management.
-                </li>
-
-                <li>
-                  Maintaining processing accuracy with continuous
-                  quality audits.
-                </li>
-
-                <li>
-                  Adapting quickly to evolving healthcare regulations.
-                </li>
-
-                <li>
-                  Managing high claim volumes efficiently.
-                </li>
-
-                <li>
-                  Ensuring full compliance with PHI security standards.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Why Choose SkyKorg for Payer-Side Claims Processing?
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>More than 98% claims processing accuracy.</li>
-
-                <li>
-                  Automation and optimized workflows improve operational
-                  efficiency.
-                </li>
-
-                <li>
-                  Infrastructure compatibility with multiple payer
-                  systems.
-                </li>
-
-                <li>
-                  Real-time reporting and analytics for better
-                  decision-making.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Partner With SkyKorg for Expert Claims Processing
-              </h2>
-
-              <p>
-                SkyKorg Healthcare provides scalable claims processing
-                services that help payers improve efficiency, reduce
-                costs, and maintain compliance with healthcare
-                regulations.
-              </p>
-
-            </div>
+            <ul className="space-y-3 text-sm font-medium">
+              <li>We will meet or beat any price</li>
+              <li>80% Cost Reduction Guaranteed</li>
+              <li>99.9% Accuracy</li>
+              <li>100's of References</li>
+            </ul>
 
           </div>
 
-          {/* SIDEBAR */}
-          <aside className="space-y-6">
-
-            <div className="bg-orange-500 p-8 text-white">
-
-              <h3 className="text-xl font-semibold mb-4">
-                How Can We Help?
-              </h3>
-
-              <p className="mb-6">
-                Transform your Revenue Cycle with our expert support.
-              </p>
-
-              <Link
-                href="/contact"
-                className="bg-black px-6 py-3 inline-block"
-              >
-                Schedule a Call
-              </Link>
-
-            </div>
-
-            <div className="bg-orange-100 border border-orange-400 p-6">
-
-              <h3 className="font-semibold mb-4">
-                The SkyKorg Advantage
-              </h3>
-
-              <ul className="space-y-2 text-sm">
-
-                <li>✔ Competitive pricing</li>
-                <li>✔ Up to 80% cost reduction</li>
-                <li>✔ 99.9% processing accuracy</li>
-                <li>✔ Trusted industry references</li>
-
-              </ul>
-
-            </div>
-
-          </aside>
-
-        </div>
+        </aside>
 
       </section>
 
+
       {/* CTA */}
-      <section className="bg-orange-500 text-white py-14 text-center">
+      <section className="bg-yellow-500 py-6">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
-        <div className="max-w-4xl mx-auto px-6">
-
-          <h2 className="text-2xl font-semibold mb-4">
-            Are You Looking for Streamlined Medical Billing Assistance?
-          </h2>
+          <h3 className="font-semibold">
+            Are You Looking For Streamlined Medical Billing Assistance?
+          </h3>
 
           <Link
             href="/contact"
-            className="bg-black px-8 py-3 rounded"
+            className="bg-black text-white px-6 py-3 text-sm font-semibold"
           >
-            Request a Demo
+            Request A Demo →
           </Link>
+
+        </div>
+      </section>
+
+
+      {/* CONTACT */}
+      <section className="bg-black text-white py-16">
+
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
+
+            <p className="text-gray-300">
+              Let us know about your areas of interest and connect with us
+              to enhance your revenue cycle management experience.
+            </p>
+          </div>
+
+          {/* FORM */}
+          <form className="grid grid-cols-2 gap-4">
+
+            <input placeholder="Name*" className="p-3 text-black"/>
+            <input placeholder="How did you hear about us*" className="p-3 text-black"/>
+
+            <input placeholder="Email*" className="p-3 text-black"/>
+            <textarea placeholder="Message*" className="p-3 text-black"></textarea>
+
+            <input placeholder="Phone Number*" className="p-3 text-black"/>
+
+            <select className="p-3 text-black">
+              <option>What are you interested in?</option>
+            </select>
+
+            <button className="bg-yellow-500 text-black px-6 py-3 font-semibold col-span-2">
+              Submit →
+            </button>
+
+          </form>
 
         </div>
 
       </section>
-
-      <EnquiryForm />
 
     </main>
   );

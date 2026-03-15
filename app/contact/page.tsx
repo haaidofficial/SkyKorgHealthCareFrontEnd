@@ -26,7 +26,7 @@ export default function ContactPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/contact/contact-hero.jpg"
+            src="/assets/images/contact-hero.jpg"
             alt="Contact SkyKorg Healthcare"
             fill
             className="object-cover"
@@ -37,7 +37,7 @@ export default function ContactPage() {
 
         <div className="relative max-w-7xl mx-auto px-6">
 
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <h1 className="text-4xl md:text-4xl font-bold">
             Get Started Here
           </h1>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
                   src="/assets/images/testimonial/kevin.jpg"
                   width={60}
                   height={60}
-                  alt="Kevin O'Leary"
+                  alt="David Collins"
                   className="rounded-full"
                 />
 

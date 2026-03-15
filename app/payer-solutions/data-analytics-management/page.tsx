@@ -28,7 +28,7 @@ export default function DataAnalyticsPage() {
 
         <div className="relative max-w-7xl mx-auto px-6">
 
-          <h1 className="text-4xl md:text-5xl font-bold max-w-3xl">
+          <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
             Actionable Healthcare Data Analytics and Management Solutions
           </h1>
 

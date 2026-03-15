@@ -23,7 +23,7 @@ export default function AboutPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/about/about-hero.jpg"
+            src="/assets/images/about-hero.jpg"
             alt="About SkyKorg Healthcare"
             fill
             className="object-cover"
@@ -34,7 +34,7 @@ export default function AboutPage() {
 
         <div className="relative max-w-7xl mx-auto px-6">
 
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <h1 className="text-4xl md:text-4xl font-bold">
             About SkyKorg Healthcare
           </h1>
 
