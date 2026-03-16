@@ -9,7 +9,7 @@ export default function ContactSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/contact-bg.jpg"
+          src="/assets/images/contact-bg.jpg"
           alt="Healthcare background"
           fill
           className="object-cover"

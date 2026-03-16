@@ -18,7 +18,7 @@ const logos = [
 ];
 
   return (
-    <section className="relative bg-[#F4F3FF] py-16 mt-8 overflow-hidden">
+    <section className="relative bg-[#F4F3FF] py-12 md:mt-8 overflow-hidden">
 
       {/* Background Image */}
       

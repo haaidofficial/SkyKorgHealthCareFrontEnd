@@ -65,7 +65,7 @@ const renderList = (items) => (
 );
 
 return (
-<section className="relative py-16 bg-gray-50 overflow-hidden">
+<section className="relative py-12 bg-gray-50 overflow-hidden">
 
 {/* Background Pattern */}
 <div
@@ -93,15 +93,15 @@ and revenue cycle management services.
 {/* Grid */}
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-<div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column1)}
 </div>
 
-<div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column2)}
 </div>
 
-<div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+<div className="bg-white border p-8 rounded-xl shadow-sm hover:shadow-lg transition">
 {renderList(column3)}
 </div>
 

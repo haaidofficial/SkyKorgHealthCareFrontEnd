@@ -3,12 +3,12 @@ import Link from "next/link";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
-  title: "Claims Processing Services for Payers | SkyKorg Healthcare",
+  title: "Provider Credentialing Services | SkyKorg Healthcare",
   description:
-    "SkyKorg Healthcare provides fast and accurate payer-side claims processing services ensuring compliance, efficiency, and improved financial performance."
+    "SkyKorg Healthcare provides comprehensive provider credentialing and enrollment services including verification, payer enrollment, re-credentialing, and compliance management."
 };
 
-export default function ClaimsProcessingPage() {
+export default function CredentialingPage() {
   return (
     <main className="bg-gray-50">
 
@@ -18,7 +18,7 @@ export default function ClaimsProcessingPage() {
         <div className="absolute inset-0">
           <Image
             src="/assets/images/provider-solutions/provider-hero.jpg"
-            alt="Claims Processing Services"
+            alt="Provider Credentialing Services"
             fill
             className="object-cover"
           />
@@ -29,7 +29,7 @@ export default function ClaimsProcessingPage() {
         <div className="relative max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+            Provider Credentialing and Enrollment Services
           </h1>
 
           <div className="w-16 h-1 bg-orange-500 mt-4"></div>
@@ -47,39 +47,52 @@ export default function ClaimsProcessingPage() {
           <div className="lg:col-span-2 space-y-10 text-gray-700">
 
             <p>
-              SkyKorg Healthcare offers a comprehensive approach to
-              payer-side claims processing. Our expertise combines
-              advanced technology and industry knowledge to improve
-              operational efficiency and financial performance for
-              healthcare payers.
+              Provider credentialing is a critical process that verifies the
+              qualifications, experience, and professional background of
+              healthcare providers before they are authorized to deliver
+              medical services and submit insurance claims. Proper
+              credentialing ensures compliance with payer regulations and
+              improves the credibility of healthcare organizations.
+            </p>
+
+            <p>
+              SkyKorg Healthcare provides comprehensive provider credentialing
+              services designed to simplify enrollment with insurance payers,
+              maintain regulatory compliance, and help healthcare practices
+              start billing faster.
             </p>
 
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Comprehensive Payer-Side Claims Processing Solutions
+                Our Credentialing Process
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
                 <li>
-                  Claim Form Processing and Re-Pricing for efficient
-                  claims entry and verification.
+                  Collection and review of provider documentation and
+                  professional credentials.
                 </li>
 
                 <li>
-                  Eligibility and Coverage Verification to ensure
-                  accurate claims processing.
+                  Request for additional documentation and follow-up with
+                  providers when required.
                 </li>
 
                 <li>
-                  Timely claim turnaround with industry-leading
-                  processing speed.
+                  Primary and secondary source verification of credentials
+                  following NCQA and CMS guidelines.
                 </li>
 
                 <li>
-                  Expertise across Medicare, Medicaid, and Commercial
-                  payer claims systems.
+                  Preparation of credentialing reports for approval by
+                  credentialing committees.
+                </li>
+
+                <li>
+                  Notification of credentialing status and enrollment
+                  confirmation with payers.
                 </li>
 
               </ul>
@@ -89,32 +102,22 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Addressing Common Challenges in Claims Processing
+                Comprehensive Credentialing Services
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
-                <li>
-                  Meeting turnaround time requirements through optimized
-                  workflow management.
-                </li>
+                <li>Provider enrollment with commercial and government payers.</li>
 
-                <li>
-                  Maintaining processing accuracy with continuous
-                  quality audits.
-                </li>
+                <li>Medicare and Medicaid provider enrollment services.</li>
 
-                <li>
-                  Adapting quickly to evolving healthcare regulations.
-                </li>
+                <li>CAQH profile creation and maintenance.</li>
 
-                <li>
-                  Managing high claim volumes efficiently.
-                </li>
+                <li>Hospital privilege applications and follow-ups.</li>
 
-                <li>
-                  Ensuring full compliance with PHI security standards.
-                </li>
+                <li>Re-credentialing and license renewals.</li>
+
+                <li>Payer contract enrollment and network participation.</li>
 
               </ul>
 
@@ -123,44 +126,52 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Why Choose SkyKorg for Payer-Side Claims Processing?
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>More than 98% claims processing accuracy.</li>
-
-                <li>
-                  Automation and optimized workflows improve operational
-                  efficiency.
-                </li>
-
-                <li>
-                  Infrastructure compatibility with multiple payer
-                  systems.
-                </li>
-
-                <li>
-                  Real-time reporting and analytics for better
-                  decision-making.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Partner With SkyKorg for Expert Claims Processing
+                Reporting and Compliance Support
               </h2>
 
               <p>
-                SkyKorg Healthcare provides scalable claims processing
-                services that help payers improve efficiency, reduce
-                costs, and maintain compliance with healthcare
-                regulations.
+                SkyKorg Healthcare ensures that healthcare providers remain
+                compliant with regulatory bodies such as CMS, NCQA, and other
+                healthcare authorities. Our credentialing specialists
+                maintain accurate provider records and generate detailed
+                reports that support compliance and operational transparency.
               </p>
+
+              <ul className="list-disc ml-6 mt-4 space-y-2">
+
+                <li>Provider data maintenance and updates.</li>
+
+                <li>Physician and facility credentialing reports.</li>
+
+                <li>Provider ADD/TERM tracking reports.</li>
+
+                <li>Delegated credentialing support.</li>
+
+                <li>Custom reporting for healthcare organizations.</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Choose SkyKorg Healthcare for Credentialing?
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>Experienced credentialing specialists.</li>
+
+                <li>Faster payer enrollment timelines.</li>
+
+                <li>Reduced administrative workload.</li>
+
+                <li>Accurate documentation and verification.</li>
+
+                <li>Full compliance with CMS and NCQA standards.</li>
+
+              </ul>
 
             </div>
 
@@ -172,11 +183,12 @@ export default function ClaimsProcessingPage() {
             <div className="bg-orange-500 p-8 text-white">
 
               <h3 className="text-xl font-semibold mb-4">
-                How Can We Help?
+                Need Credentialing Support?
               </h3>
 
               <p className="mb-6">
-                Transform your Revenue Cycle with our expert support.
+                Let SkyKorg Healthcare manage provider credentialing and
+                payer enrollment efficiently.
               </p>
 
               <Link
@@ -196,10 +208,11 @@ export default function ClaimsProcessingPage() {
 
               <ul className="space-y-2 text-sm">
 
-                <li>✔ Competitive pricing</li>
-                <li>✔ Up to 80% cost reduction</li>
-                <li>✔ 99.9% processing accuracy</li>
-                <li>✔ Trusted industry references</li>
+                <li>✔ Faster provider enrollment</li>
+                <li>✔ Experienced credentialing specialists</li>
+                <li>✔ Compliance with CMS & NCQA standards</li>
+                <li>✔ Accurate provider documentation</li>
+                <li>✔ Reduced administrative workload</li>
 
               </ul>
 
@@ -217,7 +230,7 @@ export default function ClaimsProcessingPage() {
         <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            Are You Looking for Streamlined Medical Billing Assistance?
+            Looking for Reliable Provider Credentialing Services?
           </h2>
 
           <Link

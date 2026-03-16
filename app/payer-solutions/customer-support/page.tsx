@@ -3,12 +3,12 @@ import Link from "next/link";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
-  title: "Claims Processing Services for Payers | SkyKorg Healthcare",
+  title: "Healthcare Customer Support Services | SkyKorg Healthcare",
   description:
-    "SkyKorg Healthcare provides fast and accurate payer-side claims processing services ensuring compliance, efficiency, and improved financial performance."
+    "SkyKorg Healthcare provides dedicated healthcare customer support services including patient communication, appointment scheduling, billing support, and medical records assistance."
 };
 
-export default function ClaimsProcessingPage() {
+export default function CustomerSupportPage() {
   return (
     <main className="bg-gray-50">
 
@@ -18,7 +18,7 @@ export default function ClaimsProcessingPage() {
         <div className="absolute inset-0">
           <Image
             src="/assets/images/provider-solutions/provider-hero.jpg"
-            alt="Claims Processing Services"
+            alt="Healthcare Customer Support Services"
             fill
             className="object-cover"
           />
@@ -29,7 +29,7 @@ export default function ClaimsProcessingPage() {
         <div className="relative max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+            Healthcare Customer Support Services for Better Patient Engagement
           </h1>
 
           <div className="w-16 h-1 bg-orange-500 mt-4"></div>
@@ -47,119 +47,170 @@ export default function ClaimsProcessingPage() {
           <div className="lg:col-span-2 space-y-10 text-gray-700">
 
             <p>
-              SkyKorg Healthcare offers a comprehensive approach to
-              payer-side claims processing. Our expertise combines
-              advanced technology and industry knowledge to improve
-              operational efficiency and financial performance for
-              healthcare payers.
+              SkyKorg Healthcare offers comprehensive healthcare customer
+              support services designed to improve patient engagement and
+              operational efficiency for healthcare providers. Our dedicated
+              support teams help medical practices manage patient
+              communications, administrative tasks, and service coordination
+              while ensuring a high level of patient satisfaction.
+            </p>
+
+            <p>
+              As healthcare organizations continue to grow, managing patient
+              inquiries and administrative responsibilities can become
+              challenging. SkyKorg Healthcare provides scalable customer
+              support solutions that allow healthcare providers to focus on
+              delivering quality care while we handle operational support.
             </p>
 
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Comprehensive Payer-Side Claims Processing Solutions
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>
-                  Claim Form Processing and Re-Pricing for efficient
-                  claims entry and verification.
-                </li>
-
-                <li>
-                  Eligibility and Coverage Verification to ensure
-                  accurate claims processing.
-                </li>
-
-                <li>
-                  Timely claim turnaround with industry-leading
-                  processing speed.
-                </li>
-
-                <li>
-                  Expertise across Medicare, Medicaid, and Commercial
-                  payer claims systems.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Addressing Common Challenges in Claims Processing
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>
-                  Meeting turnaround time requirements through optimized
-                  workflow management.
-                </li>
-
-                <li>
-                  Maintaining processing accuracy with continuous
-                  quality audits.
-                </li>
-
-                <li>
-                  Adapting quickly to evolving healthcare regulations.
-                </li>
-
-                <li>
-                  Managing high claim volumes efficiently.
-                </li>
-
-                <li>
-                  Ensuring full compliance with PHI security standards.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Why Choose SkyKorg for Payer-Side Claims Processing?
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>More than 98% claims processing accuracy.</li>
-
-                <li>
-                  Automation and optimized workflows improve operational
-                  efficiency.
-                </li>
-
-                <li>
-                  Infrastructure compatibility with multiple payer
-                  systems.
-                </li>
-
-                <li>
-                  Real-time reporting and analytics for better
-                  decision-making.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Partner With SkyKorg for Expert Claims Processing
+                The Importance of Healthcare Customer Support
               </h2>
 
               <p>
-                SkyKorg Healthcare provides scalable claims processing
-                services that help payers improve efficiency, reduce
-                costs, and maintain compliance with healthcare
-                regulations.
+                Effective customer support is essential for building strong
+                relationships with patients. From handling appointment
+                requests to addressing billing questions, responsive
+                communication improves patient trust and satisfaction.
+              </p>
+
+              <p className="mt-4">
+                A patient-centered support system ensures that healthcare
+                organizations can maintain consistent service quality while
+                improving operational efficiency and reputation.
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Key Benefits of Healthcare Customer Support
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>
+                  Improved patient satisfaction through responsive and
+                  professional communication.
+                </li>
+
+                <li>
+                  Reduced administrative workload for healthcare staff.
+                </li>
+
+                <li>
+                  Faster patient query resolution and appointment
+                  management.
+                </li>
+
+                <li>
+                  Better patient retention and long-term engagement.
+                </li>
+
+                <li>
+                  Efficient coordination between patients and healthcare
+                  providers.
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Choose SkyKorg Healthcare Customer Support?
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>
+                  Patient-centric communication handled by trained support
+                  professionals.
+                </li>
+
+                <li>
+                  Deep expertise in healthcare workflows and patient
+                  engagement.
+                </li>
+
+                <li>
+                  24/7 support availability for patient assistance.
+                </li>
+
+                <li>
+                  Seamless integration with healthcare practice
+                  management systems.
+                </li>
+
+                <li>
+                  Secure processes that comply with healthcare data
+                  protection standards.
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Our Healthcare Customer Support Services
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>Patient appointment scheduling and coordination.</li>
+
+                <li>Patient communication via phone, email, and chat.</li>
+
+                <li>Billing and insurance inquiry assistance.</li>
+
+                <li>Medical records management and documentation support.</li>
+
+                <li>Prior authorization coordination.</li>
+
+                <li>Telehealth scheduling and support.</li>
+
+                <li>Patient follow-ups and reminder calls.</li>
+
+                <li>Medical documentation and chart preparation.</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                HIPAA-Compliant Customer Support Services
+              </h2>
+
+              <p>
+                SkyKorg Healthcare strictly follows HIPAA compliance
+                standards to ensure the privacy and security of patient
+                data. Our support teams are trained in healthcare data
+                protection protocols, ensuring that patient information
+                is handled securely and responsibly at all times.
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Transform Your Healthcare Customer Experience
+              </h2>
+
+              <p>
+                Partner with SkyKorg Healthcare to deliver exceptional
+                patient support services. Our experienced teams help
+                healthcare organizations streamline operations,
+                improve patient communication, and create a more
+                patient-centered care environment.
               </p>
 
             </div>
@@ -172,11 +223,12 @@ export default function ClaimsProcessingPage() {
             <div className="bg-orange-500 p-8 text-white">
 
               <h3 className="text-xl font-semibold mb-4">
-                How Can We Help?
+                Need Healthcare Support Services?
               </h3>
 
               <p className="mb-6">
-                Transform your Revenue Cycle with our expert support.
+                Improve patient engagement and streamline operations
+                with SkyKorg Healthcare.
               </p>
 
               <Link
@@ -196,10 +248,11 @@ export default function ClaimsProcessingPage() {
 
               <ul className="space-y-2 text-sm">
 
-                <li>✔ Competitive pricing</li>
-                <li>✔ Up to 80% cost reduction</li>
-                <li>✔ 99.9% processing accuracy</li>
-                <li>✔ Trusted industry references</li>
+                <li>✔ 24/7 patient support services</li>
+                <li>✔ Trained healthcare support teams</li>
+                <li>✔ Improved patient satisfaction</li>
+                <li>✔ HIPAA compliant operations</li>
+                <li>✔ Scalable support solutions</li>
 
               </ul>
 
@@ -217,7 +270,7 @@ export default function ClaimsProcessingPage() {
         <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            Are You Looking for Streamlined Medical Billing Assistance?
+            Looking for Reliable Healthcare Customer Support Services?
           </h2>
 
           <Link

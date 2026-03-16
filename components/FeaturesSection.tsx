@@ -71,7 +71,7 @@ SkyKorg Healthcare – 10x Better Than Others
 </div>
 
 {/* Grid */}
-<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
 
 {features.map((feature, index) => {
 const Icon = feature.icon;
@@ -79,7 +79,7 @@ const Icon = feature.icon;
 return (
 <div
 key={index}
-className="group bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 text-center"
+className="group bg-white border p-6 rounded-xl shadow-sm hover:shadow-lg transition duration-300 text-center"
 >
 
 <div className="flex justify-center mb-4">

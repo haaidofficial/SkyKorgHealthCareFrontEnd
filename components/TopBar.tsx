@@ -15,17 +15,23 @@ export default function NavBar() {
   return (
     <div className="bg-[#05152f] text-gray-300 text-sm">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center py-3">
-          <div className="flex items-center gap-2">
-            <i className="fas fa-paper-plane text-orange-500"></i>
-            <a href="mailto:info@skykorghealthcare.com" className="md:flex sm:items-center gap-1 hover:text-orange-500 transition">
-             <EnvelopeIcon className="w-4 h-4 text-white" /> info@skykorghealthcare.com
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-2 md:py-3 pl-4 md:pl-0">
+
+          {/* Email */}
+          <div className="flex items-center gap-2 text-sm">
+            <EnvelopeIcon className="w-4 h-4 text-white" />
+            <a
+              href="mailto:info@skykorghealthcare.com"
+              className="hover:text-orange-500 transition break-all"
+            >
+              info@skykorghealthcare.com
             </a>
           </div>
 
-          <div className="hidden md:flex items-center gap-2">
-            <i className="fas fa-map-marker-alt text-orange-500"></i>
-            <span className='flex item-center gap-1'><MapPinIcon className="w-4 h-4 text-white" />42 Thatcher drive, Postal Code - R3T2L3</span>
+          {/* Address */}
+          <div className="flex items-center gap-2 text-sm">
+            <MapPinIcon className="w-4 h-4 text-white" />
+            <span>42 Thatcher Drive, Postal Code - R3T2L3</span>
           </div>
 
         </div>

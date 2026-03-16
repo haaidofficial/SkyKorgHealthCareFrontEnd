@@ -20,37 +20,40 @@ export default function HomePage() {
     <main>
       <HeroCarousel />
       <USP />
-      <section className="py-16 z-10">
+      <section className="py-16 pb-12 z-10">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 items-center">
           {/* LEFT IMAGE AREA */}
-          <div className="relative w-fit">
-            {/* Border Frame */}
-            <div className="absolute -top-6 -right-6 w-[420px] h-[520px] border-4 border-green-600"></div>
-            {/* Main Image */}
-            <div className="relative z-10 w-[420px]">
-              <Image
-                src="/assets/images/about-us.jpg"
-                alt="Healthcare"
-                width={420}
-                height={520}
-                className="object-cover h-[520px]"
-              />
-            </div>
+          <div className="relative w-full max-w-md mx-auto lg:mx-0">
 
-            {/* Small Video Thumbnail */}
-            <div className="absolute -bottom-12 right-[-80px] w-[220px] shadow-2xl z-20">
-              <Image
-                src="/assets/images/about-thumb.jpg"
-                alt="Video"
-                width={220}
-                height={150}
-                className="object-cover"
-              />
-            </div>
-          </div>
+  {/* Border Frame */}
+  <div className="absolute -top-6 -right-6 w-full h-full border-4 border-green-600"></div>
+
+  {/* Main Image */}
+  <div className="relative z-10 w-full">
+    <Image
+      src="/assets/images/about-us.jpg"
+      alt="Healthcare"
+      width={420}
+      height={520}
+      className="w-full h-auto object-cover"
+    />
+  </div>
+
+  {/* Small Video Thumbnail */}
+  <div className="absolute -bottom-10 right-[-20px] sm:right-[-40px] md:right-[-80px] w-36 sm:w-44 md:w-52 shadow-2xl z-20">
+  <Image
+    src="/assets/images/about-thumb.jpg"
+    alt="Video"
+    width={220}
+    height={150}
+    className="w-full h-auto object-cover"
+  />
+</div>
+
+</div>
 
           {/* RIGHT CONTENT */}
-          <div className='w-full'>
+          <div className='w-full mt-12 md:mt-0'>
             <span className="text-orange-500 uppercase text-sm tracking-widest text-gray-400">
               ABOUT TO SKYKORG HEALTHCARE
             </span>
@@ -81,7 +84,7 @@ export default function HomePage() {
             </ul>
 
             {/* CTA */}
-            <div className="mt-10 flex items-center gap-8">
+            <div className="mt-10 flex flex-col md:flex-row items-center gap-8">
               <a href="#"
                 className="font-bold border px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white transition"
               >

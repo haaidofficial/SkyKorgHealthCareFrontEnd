@@ -42,7 +42,7 @@ export default function HealthcareSpecialties() {
   ];
 
   return (
-    <section className="relative py-16">
+    <section className="relative py-12">
 
       {/* Background */}
       <div
@@ -79,7 +79,7 @@ export default function HealthcareSpecialties() {
             return (
               <div
                 key={index}
-                className="group bg-white border p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 flex gap-5"
+                className="group bg-white border p-8 rounded-xl shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-center md:flex-row gap-5"
               >
 
                 {/* Hex Icon */}

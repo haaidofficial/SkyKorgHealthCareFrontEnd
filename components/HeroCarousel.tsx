@@ -50,12 +50,12 @@ export default function HeroCarousel() {
               <div className="absolute inset-0 bg-black/30"></div>
               {/* Content */}
               <div className="relative z-10 max-w-7xl mx-auto">
-                <div className="max-w-3xl mt-10">                  
+                <div className="max-w-3xl mt-10 pl-4 md:pl-0">                  
                   <span className="text-orange-500 uppercase tracking-[5px] text-sm">
                     SkyKorg HealthCare
                   </span>
 
-                  <h1 className="text-5xl text-white md:text-4xl lg:text-4xl font-extrabold mt-2 leading-tight">
+                  <h1 className="text-3xl md:text-5xl text-white md:text-4xl lg:text-4xl font-extrabold mt-2 leading-tight">
                     {slide.heading}
                   </h1>                  
 

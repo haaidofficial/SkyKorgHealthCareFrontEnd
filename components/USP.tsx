@@ -30,9 +30,8 @@ export default function HealthcareHighlights() {
   ];
 
   return (
-    <section className="-mt-[200px] z-40 relative">
+    <section className="mt-4 md:-mt-[200px] z-40 relative">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="bg-white rounded-xl shadow-lg grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
 
           {items.map((item, index) => {

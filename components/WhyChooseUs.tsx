@@ -1,6 +1,6 @@
 export default function WhySkyKorg() {
   return (
-    <section className="relative py-16 bg-gray-50 overflow-hidden">
+    <section className="relative py-12 bg-gray-50 overflow-hidden">
 
       {/* Background Pattern */}
       <div
@@ -14,8 +14,8 @@ export default function WhySkyKorg() {
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+        <div className="text-center mb-16 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center">
             Why SkyKorg HealthCare
           </h2>
 
@@ -40,17 +40,17 @@ export default function WhySkyKorg() {
           {/* Text Content */}
           <div>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-6">
               Trusted Partner in Healthcare Outsourcing
             </h3>
 
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="leading-relaxed text-white mb-6">
               SkyKorg HealthCare is a trusted Revenue Cycle Management (RCM)
               partner providing end-to-end healthcare outsourcing solutions
               across pre-billing, mid-cycle, and post-billing operations.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="leading-relaxed text-white mb-8">
               Our services include Prior Authorization, Medical Billing,
               Coding, Accounts Receivable follow-ups, Denial Management,
               and Virtual Medical Assistance designed to help healthcare
@@ -58,7 +58,7 @@ export default function WhySkyKorg() {
             </p>
 
             {/* Key Points */}
-            <ul className="space-y-3 mb-8 text-gray-700">
+            <ul className="space-y-3 mb-8 text-white">
               <li>✔ End-to-End Revenue Cycle Management</li>
               <li>✔ Faster Claims Processing & Collections</li>
               <li>✔ Experienced Medical Billing Specialists</li>

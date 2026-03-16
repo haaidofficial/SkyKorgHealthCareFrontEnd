@@ -17,10 +17,10 @@ export default function NavBar() {
   return (
     <>
       <TopBar />
-      <header className="bg-white sticky top-0 z-50">
+      <header className="bg-white sticky top-0 z-50 shadow">
 
         <div className="container-responsive max-w-7xl mx-auto">
-          <div className="flex items-center justify-between border-b">
+          <div className="flex items-center justify-between border-b pl-4 md:pl-0">
             <Link href="/" className="text-lg font-semibold hover:text-brand-700">
               <Image src="/assets/images/logo.png" alt='Logo' width={200} height={60} />
             </Link>
@@ -35,7 +35,7 @@ export default function NavBar() {
                 </svg>
               </div>
 
-              <div className="leading-tight text-right">
+              <div className="hidden md:block leading-tight text-right">
                 <p className="text-gray-700 text-sm">
                   Call us for detail
                 </p>

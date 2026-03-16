@@ -3,12 +3,12 @@ import Link from "next/link";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
-  title: "Claims Processing Services for Payers | SkyKorg Healthcare",
+  title: "Utilization Management Services | SkyKorg Healthcare",
   description:
-    "SkyKorg Healthcare provides fast and accurate payer-side claims processing services ensuring compliance, efficiency, and improved financial performance."
+    "SkyKorg Healthcare provides comprehensive utilization management services including pre-authorization, concurrent review, and retrospective review to ensure medical necessity, compliance, and cost control."
 };
 
-export default function ClaimsProcessingPage() {
+export default function UtilizationManagementPage() {
   return (
     <main className="bg-gray-50">
 
@@ -17,8 +17,8 @@ export default function ClaimsProcessingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
-            alt="Claims Processing Services"
+            src="/assets/images/payer-solutions/payer-hero.jpg"
+            alt="Utilization Management Services"
             fill
             className="object-cover"
           />
@@ -29,7 +29,7 @@ export default function ClaimsProcessingPage() {
         <div className="relative max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+            Utilization Management Services for Improved Care and Compliance
           </h1>
 
           <div className="w-16 h-1 bg-orange-500 mt-4"></div>
@@ -47,39 +47,74 @@ export default function ClaimsProcessingPage() {
           <div className="lg:col-span-2 space-y-10 text-gray-700">
 
             <p>
-              SkyKorg Healthcare offers a comprehensive approach to
-              payer-side claims processing. Our expertise combines
-              advanced technology and industry knowledge to improve
-              operational efficiency and financial performance for
-              healthcare payers.
+              SkyKorg Healthcare provides advanced utilization management
+              services designed to ensure that healthcare services are
+              medically necessary, cost-effective, and compliant with payer
+              guidelines. Our utilization review specialists help healthcare
+              organizations manage treatment approvals, optimize resource
+              utilization, and improve operational efficiency.
+            </p>
+
+            <p>
+              By combining clinical expertise with operational oversight,
+              SkyKorg Healthcare supports healthcare payers and providers in
+              delivering quality care while controlling healthcare costs and
+              maintaining regulatory compliance.
             </p>
 
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Comprehensive Payer-Side Claims Processing Solutions
+                What is Utilization Management?
+              </h2>
+
+              <p>
+                Utilization management is a proactive healthcare process that
+                evaluates whether medical services and treatments are
+                appropriate, necessary, and aligned with payer policies.
+                These reviews ensure that patients receive the right care
+                while preventing unnecessary medical procedures and costs.
+              </p>
+
+              <p className="mt-4">
+                From prior authorization to concurrent and retrospective
+                reviews, utilization management plays a key role in
+                improving patient outcomes while maintaining financial
+                accountability across healthcare systems.
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Utilization Management Is Important
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
                 <li>
-                  Claim Form Processing and Re-Pricing for efficient
-                  claims entry and verification.
+                  Ensures appropriate resource allocation and prevents
+                  unnecessary healthcare services.
                 </li>
 
                 <li>
-                  Eligibility and Coverage Verification to ensure
-                  accurate claims processing.
+                  Maintains compliance with payer policies and regulatory
+                  standards.
                 </li>
 
                 <li>
-                  Timely claim turnaround with industry-leading
-                  processing speed.
+                  Reduces claim denials through accurate medical necessity
+                  verification.
                 </li>
 
                 <li>
-                  Expertise across Medicare, Medicaid, and Commercial
-                  payer claims systems.
+                  Improves patient care by ensuring treatments follow
+                  evidence-based guidelines.
+                </li>
+
+                <li>
+                  Helps healthcare organizations manage costs effectively.
                 </li>
 
               </ul>
@@ -89,31 +124,27 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Addressing Common Challenges in Claims Processing
+                Types of Utilization Management Reviews
               </h2>
 
-              <ul className="list-disc ml-6 space-y-2">
+              <ul className="list-disc ml-6 space-y-3">
 
                 <li>
-                  Meeting turnaround time requirements through optimized
-                  workflow management.
+                  <strong>Prospective Review:</strong> Conducted before a
+                  treatment begins to verify medical necessity and obtain
+                  prior authorization.
                 </li>
 
                 <li>
-                  Maintaining processing accuracy with continuous
-                  quality audits.
+                  <strong>Concurrent Review:</strong> Performed during the
+                  course of treatment to ensure that care remains appropriate
+                  and aligned with payer guidelines.
                 </li>
 
                 <li>
-                  Adapting quickly to evolving healthcare regulations.
-                </li>
-
-                <li>
-                  Managing high claim volumes efficiently.
-                </li>
-
-                <li>
-                  Ensuring full compliance with PHI security standards.
+                  <strong>Retrospective Review:</strong> Conducted after
+                  services are provided to evaluate treatment outcomes and
+                  determine claim validity.
                 </li>
 
               </ul>
@@ -123,26 +154,33 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Why Choose SkyKorg for Payer-Side Claims Processing?
+                Benefits of Outsourcing Utilization Management
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
-                <li>More than 98% claims processing accuracy.</li>
+                <li>
+                  Reduced administrative burden for healthcare providers
+                  and payers.
+                </li>
 
                 <li>
-                  Automation and optimized workflows improve operational
+                  Faster authorization approvals and improved workflow
                   efficiency.
                 </li>
 
                 <li>
-                  Infrastructure compatibility with multiple payer
-                  systems.
+                  Improved compliance with payer and regulatory guidelines.
                 </li>
 
                 <li>
-                  Real-time reporting and analytics for better
-                  decision-making.
+                  Technology-driven review processes that improve
+                  operational accuracy.
+                </li>
+
+                <li>
+                  Enhanced revenue cycle management through fewer claim
+                  rejections.
                 </li>
 
               </ul>
@@ -152,14 +190,38 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Partner With SkyKorg for Expert Claims Processing
+                Why Choose SkyKorg Healthcare?
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>Experienced utilization management specialists.</li>
+
+                <li>Streamlined prior authorization workflows.</li>
+
+                <li>Advanced analytics and reporting capabilities.</li>
+
+                <li>Compliance with healthcare payer regulations.</li>
+
+                <li>Scalable solutions for healthcare organizations.</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Start Optimizing Your Utilization Management Process
               </h2>
 
               <p>
-                SkyKorg Healthcare provides scalable claims processing
-                services that help payers improve efficiency, reduce
-                costs, and maintain compliance with healthcare
-                regulations.
+                SkyKorg Healthcare helps healthcare organizations enhance
+                operational efficiency through streamlined utilization
+                management services. Our experienced teams support
+                authorization reviews, compliance monitoring, and
+                data-driven decision-making to improve both patient
+                outcomes and financial performance.
               </p>
 
             </div>
@@ -172,11 +234,12 @@ export default function ClaimsProcessingPage() {
             <div className="bg-orange-500 p-8 text-white">
 
               <h3 className="text-xl font-semibold mb-4">
-                How Can We Help?
+                Need Utilization Management Support?
               </h3>
 
               <p className="mb-6">
-                Transform your Revenue Cycle with our expert support.
+                Optimize treatment approvals and reduce administrative
+                workload with SkyKorg Healthcare.
               </p>
 
               <Link
@@ -196,10 +259,11 @@ export default function ClaimsProcessingPage() {
 
               <ul className="space-y-2 text-sm">
 
-                <li>✔ Competitive pricing</li>
-                <li>✔ Up to 80% cost reduction</li>
-                <li>✔ 99.9% processing accuracy</li>
-                <li>✔ Trusted industry references</li>
+                <li>✔ 99%+ accuracy in review processes</li>
+                <li>✔ Faster prior authorization approvals</li>
+                <li>✔ Reduced operational costs</li>
+                <li>✔ Regulatory compliance expertise</li>
+                <li>✔ Experienced clinical reviewers</li>
 
               </ul>
 
@@ -217,7 +281,7 @@ export default function ClaimsProcessingPage() {
         <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            Are You Looking for Streamlined Medical Billing Assistance?
+            Looking for Expert Utilization Management Services?
           </h2>
 
           <Link

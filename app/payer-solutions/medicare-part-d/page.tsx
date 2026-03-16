@@ -3,12 +3,12 @@ import Link from "next/link";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
-  title: "Claims Processing Services for Payers | SkyKorg Healthcare",
+  title: "Medicare Part D Services for Healthcare Payers | SkyKorg Healthcare",
   description:
-    "SkyKorg Healthcare provides fast and accurate payer-side claims processing services ensuring compliance, efficiency, and improved financial performance."
+    "SkyKorg Healthcare provides Medicare Part D support services including claims evaluation, prescription drug coverage validation, compliance review, and payer-side adjudication assistance."
 };
 
-export default function ClaimsProcessingPage() {
+export default function MedicarePartDPage() {
   return (
     <main className="bg-gray-50">
 
@@ -17,8 +17,8 @@ export default function ClaimsProcessingPage() {
 
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/provider-solutions/provider-hero.jpg"
-            alt="Claims Processing Services"
+            src="/assets/images/payer-solutions/payer-hero.jpg"
+            alt="Medicare Part D Services"
             fill
             className="object-cover"
           />
@@ -29,7 +29,7 @@ export default function ClaimsProcessingPage() {
         <div className="relative max-w-7xl mx-auto px-6">
 
           <h1 className="text-4xl md:text-4xl font-bold max-w-3xl">
-            Fast and Accurate Claims Processing Services for Payers
+            Medicare Part D Services for Healthcare Payers
           </h1>
 
           <div className="w-16 h-1 bg-orange-500 mt-4"></div>
@@ -47,39 +47,52 @@ export default function ClaimsProcessingPage() {
           <div className="lg:col-span-2 space-y-10 text-gray-700">
 
             <p>
-              SkyKorg Healthcare offers a comprehensive approach to
-              payer-side claims processing. Our expertise combines
-              advanced technology and industry knowledge to improve
-              operational efficiency and financial performance for
-              healthcare payers.
+              Medicare Part D provides prescription drug coverage for
+              Medicare beneficiaries and plays a crucial role in ensuring
+              patients receive affordable medications. SkyKorg Healthcare
+              offers specialized Medicare Part D support services to help
+              healthcare payers manage claims efficiently, maintain
+              regulatory compliance, and improve operational efficiency.
+            </p>
+
+            <p>
+              Our experienced teams help evaluate prescription drug claims,
+              verify coverage eligibility, and ensure claims are processed
+              accurately according to Medicare regulations and payer
+              guidelines.
             </p>
 
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Comprehensive Payer-Side Claims Processing Solutions
+                Key Facts About Medicare Part D
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
                 <li>
-                  Claim Form Processing and Re-Pricing for efficient
-                  claims entry and verification.
+                  Medicare Part D provides prescription drug coverage for
+                  eligible Medicare beneficiaries.
                 </li>
 
                 <li>
-                  Eligibility and Coverage Verification to ensure
-                  accurate claims processing.
+                  Coverage is typically offered through private insurance
+                  plans approved by Medicare.
                 </li>
 
                 <li>
-                  Timely claim turnaround with industry-leading
-                  processing speed.
+                  Beneficiaries must enroll in a Medicare Part D plan to
+                  receive prescription drug benefits.
                 </li>
 
                 <li>
-                  Expertise across Medicare, Medicaid, and Commercial
-                  payer claims systems.
+                  Coverage varies depending on the plan formulary and
+                  approved medications list.
+                </li>
+
+                <li>
+                  Enrollment periods are regulated and typically occur
+                  annually.
                 </li>
 
               </ul>
@@ -89,78 +102,109 @@ export default function ClaimsProcessingPage() {
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Addressing Common Challenges in Claims Processing
+                Categories of Drugs Covered Under Medicare Part D
               </h2>
 
               <ul className="list-disc ml-6 space-y-2">
 
-                <li>
-                  Meeting turnaround time requirements through optimized
-                  workflow management.
-                </li>
+                <li>HIV medications</li>
 
-                <li>
-                  Maintaining processing accuracy with continuous
-                  quality audits.
-                </li>
+                <li>Antidepressants</li>
 
-                <li>
-                  Adapting quickly to evolving healthcare regulations.
-                </li>
+                <li>Cancer treatment medications</li>
 
-                <li>
-                  Managing high claim volumes efficiently.
-                </li>
+                <li>Immunosuppressants</li>
 
-                <li>
-                  Ensuring full compliance with PHI security standards.
-                </li>
+                <li>Anticonvulsants</li>
+
+                <li>Antipsychotics</li>
 
               </ul>
+
+              <p className="mt-4">
+                Coverage lists may change depending on the formulary updates,
+                introduction of new medications, or availability of generic
+                alternatives.
+              </p>
 
             </div>
 
             <div>
 
               <h2 className="text-2xl font-semibold mb-4">
-                Why Choose SkyKorg for Payer-Side Claims Processing?
-              </h2>
-
-              <ul className="list-disc ml-6 space-y-2">
-
-                <li>More than 98% claims processing accuracy.</li>
-
-                <li>
-                  Automation and optimized workflows improve operational
-                  efficiency.
-                </li>
-
-                <li>
-                  Infrastructure compatibility with multiple payer
-                  systems.
-                </li>
-
-                <li>
-                  Real-time reporting and analytics for better
-                  decision-making.
-                </li>
-
-              </ul>
-
-            </div>
-
-            <div>
-
-              <h2 className="text-2xl font-semibold mb-4">
-                Partner With SkyKorg for Expert Claims Processing
+                Prescription Drugs Not Covered by Medicare Part D
               </h2>
 
               <p>
-                SkyKorg Healthcare provides scalable claims processing
-                services that help payers improve efficiency, reduce
-                costs, and maintain compliance with healthcare
-                regulations.
+                Certain over-the-counter medications and non-essential
+                treatments are generally excluded from Medicare Part D
+                coverage.
               </p>
+
+              <ul className="list-disc ml-6 space-y-2 mt-3">
+
+                <li>Dietary supplements</li>
+
+                <li>Vitamins</li>
+
+                <li>Weight-loss medications</li>
+
+                <li>Cosmetic-related medications</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Medicare Part D Claims Evaluation Services
+              </h2>
+
+              <p>
+                SkyKorg Healthcare assists healthcare payers in reviewing
+                Medicare Part D claims to ensure compliance with CMS
+                guidelines. Our specialists carefully evaluate prescription
+                drug claims to confirm accuracy, validate patient
+                information, and ensure appropriate billing codes are used.
+              </p>
+
+              <p className="mt-4">
+                During claims evaluation, we verify the claim details and
+                determine the appropriate outcome based on payer policies.
+              </p>
+
+              <ul className="list-disc ml-6 space-y-2 mt-4">
+
+                <li>Approve the claim for payment</li>
+
+                <li>Adjust the reimbursement amount</li>
+
+                <li>Deny claims that do not meet eligibility criteria</li>
+
+              </ul>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-2xl font-semibold mb-4">
+                Why Choose SkyKorg Healthcare?
+              </h2>
+
+              <ul className="list-disc ml-6 space-y-2">
+
+                <li>Experienced Medicare claims processing specialists.</li>
+
+                <li>Compliance with CMS and Medicare regulations.</li>
+
+                <li>Accurate prescription claim evaluation.</li>
+
+                <li>Improved operational efficiency for healthcare payers.</li>
+
+                <li>Scalable support for high claim volumes.</li>
+
+              </ul>
 
             </div>
 
@@ -172,11 +216,12 @@ export default function ClaimsProcessingPage() {
             <div className="bg-orange-500 p-8 text-white">
 
               <h3 className="text-xl font-semibold mb-4">
-                How Can We Help?
+                Need Medicare Part D Support?
               </h3>
 
               <p className="mb-6">
-                Transform your Revenue Cycle with our expert support.
+                Streamline prescription drug claims processing with
+                SkyKorg Healthcare.
               </p>
 
               <Link
@@ -196,10 +241,11 @@ export default function ClaimsProcessingPage() {
 
               <ul className="space-y-2 text-sm">
 
-                <li>✔ Competitive pricing</li>
-                <li>✔ Up to 80% cost reduction</li>
-                <li>✔ 99.9% processing accuracy</li>
-                <li>✔ Trusted industry references</li>
+                <li>✔ Medicare compliance expertise</li>
+                <li>✔ Accurate claims review</li>
+                <li>✔ Faster claim adjudication</li>
+                <li>✔ Reduced operational costs</li>
+                <li>✔ Experienced healthcare specialists</li>
 
               </ul>
 
@@ -217,7 +263,7 @@ export default function ClaimsProcessingPage() {
         <div className="max-w-4xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            Are You Looking for Streamlined Medical Billing Assistance?
+            Looking for Medicare Part D Claims Support?
           </h2>
 
           <Link

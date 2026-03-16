@@ -29,7 +29,7 @@ infinite: true,
 autoplay: true,
 speed: 600,
 autoplaySpeed: 4000,
-slidesToShow: 3,
+slidesToShow: 1,
 slidesToScroll: 1,
 responsive: [
 {
