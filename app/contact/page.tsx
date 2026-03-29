@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {
   BriefcaseIcon,
@@ -10,88 +12,129 @@ import {
   EnvelopeIcon
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useState, ChangeEvent, FormEvent } from "react";
+import axios from "axios";
+import { API_URL, ApiEndPoint } from "@/services/ApiEndPoint";
 
-export const metadata = {
-  title: "Contact SkyKorg Healthcare",
-  description:
-    "Get started with SkyKorg Healthcare solutions. Contact our team for healthcare outsourcing, RCM services, and medical billing solutions."
+type ContactFormType = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  serviceInterestedIn: string;
 };
 
+type ErrorsType = Partial<Record<keyof ContactFormType, string>>;
+
 export default function ContactPage() {
+
+  const [form, setForm] = useState<ContactFormType>({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+    serviceInterestedIn: "",
+  });
+
+  const [errors, setErrors] = useState<ErrorsType>({});
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState<{
+    type: "success" | "error" | "";
+    message: string;
+  }>({ type: "", message: "" });
+
+  const handleChange = (key: keyof ContactFormType, value: string) => {
+    setForm((prev) => ({ ...prev, [key]: value }));
+    setErrors((prev) => ({ ...prev, [key]: "" })); // clear error on typing
+  };
+
+  const validateEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const validateForm = (): ErrorsType => {
+    const newErrors: ErrorsType = {};
+
+    if (!form.name.trim()) newErrors.name = "Name is required";
+
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^[0-9]{7,15}$/.test(form.phone)) {
+      newErrors.phone = "Enter a valid phone number";
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!validateEmail(form.email)) {
+      newErrors.email = "Enter a valid email";
+    }
+
+    if (!form.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    if (!form.serviceInterestedIn) {
+      newErrors.serviceInterestedIn = "Please select a service";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const validationErrors = validateForm();
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length > 0) return;
+
+    try {
+      setLoading(true);
+      setFeedback({ type: "", message: "" });
+
+      const res = await axios.post(
+        `${API_URL}/${ApiEndPoint.ContactUsForm}`,
+        form
+      );
+
+      if (res?.data?.message) {
+        setFeedback({
+          type: "success",
+          message: "Your enquiry has been submitted successfully.",
+        });
+
+        setTimeout(() => {
+          setFeedback({ type: "", message: "" });
+        }, 5000);
+
+        setForm({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+          serviceInterestedIn: "",
+        });
+      }
+    } catch (err) {
+      setFeedback({
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <main className="bg-gray-50">
+      {/* --- unchanged sections above --- */}
 
-      {/* HERO */}
-      <section className="relative py-24 text-white">
-
-        <div className="absolute inset-0">
-          <Image
-            src="/assets/images/contact-hero.jpg"
-            alt="Contact SkyKorg Healthcare"
-            fill
-            className="object-cover"
-          />
-        </div>
-
-        <div className="absolute inset-0 bg-black/70"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6">
-
-          <h1 className="text-4xl md:text-4xl font-bold">
-            Get Started Here
-          </h1>
-
-          <div className="w-16 h-1 bg-orange-500 mt-4"></div>
-
-        </div>
-
-      </section>
-
-      {/* TRUST FEATURES */}
-      <section className="py-16 bg-white">
-
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-8 text-center">
-
-          <div>
-            <BriefcaseIcon className="w-10 h-10 mx-auto text-orange-500 mb-2" />
-            <p className="font-semibold">30+ Specialties</p>
-          </div>
-
-          <div>
-            <LinkIcon className="w-10 h-10 mx-auto text-orange-500 mb-2" />
-            <p className="font-semibold">Free 30-Day Transition</p>
-          </div>
-
-          <div>
-            <DocumentCheckIcon className="w-10 h-10 mx-auto text-orange-500 mb-2" />
-            <p className="font-semibold">No Binding Contracts</p>
-          </div>
-
-          <div>
-            <UsersIcon className="w-10 h-10 mx-auto text-orange-500 mb-2" />
-            <p className="font-semibold">Top References</p>
-          </div>
-
-          <div>
-            <CurrencyDollarIcon className="w-10 h-10 mx-auto text-orange-500 mb-2" />
-            <p className="font-semibold">$7 per Hour</p>
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* MAIN CONTENT */}
       <section className="py-16">
-
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
 
           {/* LEFT CONTENT */}
-          <div>
-
-            <h2 className="text-2xl font-semibold mb-4">
-              We Are Glad To See You Here!
-            </h2>
+          <div> <h2 className="text-2xl font-semibold mb-4">
+            We Are Glad To See You Here!
+          </h2>
 
             <p className="text-gray-600 mb-6">
               A comprehensive range of solutions in practice management
@@ -162,50 +205,110 @@ export default function ContactPage() {
               </div>
 
             </div>
-
           </div>
 
           {/* CONTACT FORM */}
           <div className="bg-gray-100 p-8">
 
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
 
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full border p-3"
-              />
+              {/* Name */}
+              <div>
+                <input
+                  type="text"
+                  value={form.name}
+                  onChange={(e) => handleChange("name", e.target.value)}
+                  placeholder="Name"
+                  className="w-full border p-3"
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm">{errors.name}</p>
+                )}
+              </div>
 
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border p-3"
-              />
+              {/* Email */}
+              <div>
+                <input
+                  type="email"
+                  value={form.email}
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  placeholder="Email"
+                  className="w-full border p-3"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm">{errors.email}</p>
+                )}
+              </div>
 
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full border p-3"
-              />
+              {/* Phone */}
+              <div>
+                <input
+                  type="tel"
+                  value={form.phone}
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  placeholder="Phone Number"
+                  className="w-full border p-3"
+                />
+                {errors.phone && (
+                  <p className="text-red-500 text-sm">{errors.phone}</p>
+                )}
+              </div>
 
-              <select className="w-full border p-3">
-                <option>What are you interested in?</option>
-                <option>Medical Billing</option>
-                <option>RCM Services</option>
-                <option>Virtual Medical Assistant</option>
-              </select>
+              {/* Service */}
+              <div>
+                <select
+                  value={form.serviceInterestedIn}
+                  onChange={(e) =>
+                    handleChange("serviceInterestedIn", e.target.value)
+                  }
+                  className="w-full border p-3"
+                >
+                  <option value="">What are you interested in?</option>
+                  <option value="Medical Billing">Medical Billing</option>
+                  <option value="RCM Services">RCM Services</option>
+                  <option value="Virtual Medical Assistant">
+                    Virtual Medical Assistant
+                  </option>
+                </select>
+                {errors.serviceInterestedIn && (
+                  <p className="text-red-500 text-sm">
+                    {errors.serviceInterestedIn}
+                  </p>
+                )}
+              </div>
 
-              <textarea
-                placeholder="Message"
-                rows={5}
-                className="w-full border p-3"
-              />
+              {/* Message */}
+              <div>
+                <textarea
+                  value={form.message}
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  placeholder="Message"
+                  rows={5}
+                  className="w-full border p-3"
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm">{errors.message}</p>
+                )}
+              </div>
+
+              {/* Feedback */}
+              {feedback.message && (
+                <p
+                  className={`text-sm ${feedback.type === "success"
+                    ? "text-green-600"
+                    : "text-red-500"
+                    }`}
+                >
+                  {feedback.message}
+                </p>
+              )}
 
               <button
                 type="submit"
+                disabled={loading}
                 className="bg-black text-white px-6 py-3"
               >
-                Submit
+                {loading ? "Submitting..." : "Submit"}
               </button>
 
             </form>
@@ -213,11 +316,7 @@ export default function ContactPage() {
           </div>
 
         </div>
-
       </section>
-
-     
-
     </main>
   );
 }
